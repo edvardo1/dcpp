@@ -48,7 +48,7 @@ struct dc_Value_s {
 
 #define MAR 26 /* make array: size */
 #define AAE 27 /* access array element: array, index */
-#define PAS 27 /* push array size */
+#define PAS 28 /* push array size */
 
 
 #endif /* DCPP_DEF_H */
