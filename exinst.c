@@ -38,7 +38,7 @@ void dc_push(dc_Value a) {
  * REWRITE ARITHMETIC INSTRUCTION IN ASSEMBLY
  */
 
-void dc_add() {
+void dc_add(void) {
 	dc_Value *a = (stackptr - sizeof(dc_Value));
 	dc_Value *b = (stackptr);
 	if(a->type == FLOAT || b->type == FLOAT) {
@@ -51,7 +51,7 @@ void dc_add() {
 	}
 }
 
-void dc_prt() {
+void dc_prt(void) {
 	switch(stackptr->type) {
 	case INTEGER :
 		printf("%ld\n", stackptr->value);
@@ -65,7 +65,7 @@ void dc_prt() {
 	}
 }
 
-void dc_exe() {
+void dc_exe(void) {
 	if(stackptr->type != ARRAY) {
 		CRASH("tried to execute non-array type.");
 	}
