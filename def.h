@@ -28,21 +28,21 @@ struct dc_Value_s {
 #define CLN 7
 #define CLR 8
 #define RUT 9
-#define LEN 13 /* length */    
-#define LST 14 /* less than */   
+
+#define LST 14 /* less than */
 #define LET 15 /* less than or equal to */
-#define GTT 16 /* greater than */   
+#define GTT 16 /* greater than */
 #define GET 17 /* greater than or equal to */
-#define ETO 18 /* equal to */   
-#define RTR 19 /* read the register */  
-#define LTR 20 /* load the register */  
+#define ETO 18 /* equal to */
+#define RTR 19 /* read the register */
+#define LTR 20 /* load the register */
 #define EXE 21       
 #define I1X 22 /* execute if 1, condition, array */
 #define AND 23
 #define NOT 24
 #define ORR 25
 #define XOR 26
-#define MAR 27 /* make array: size */  
+#define MAR 27 /* make array: size */
 #define AAE 28 /* access array element: array, index */
 #define PAS 29 /* push array size */  
 
