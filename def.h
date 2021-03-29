@@ -27,7 +27,6 @@ struct dc_Value_s {
 #define PRT 6
 #define CLN 7
 #define CLR 8
-#define RUT 9
 
 #define LST 14 /* less than */
 #define LET 15 /* less than or equal to */
