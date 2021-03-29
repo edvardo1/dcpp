@@ -1,11 +1,10 @@
 #include <stdio.h>
 
+#include "def.h"
 #include "parse.h"
 #include "exinst.h"
-#include "def.h"
 
 int main() {
-
 	dc_Value a;
 	a.type = ARRAY;
 	a.value = 4;
