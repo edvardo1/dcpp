@@ -94,3 +94,23 @@ void dc_exe(void) {
 		}
 	}
 }
+
+void dc_and(void) {
+	(stackptr - sizeof(dc_Value))->value =
+		(stackptr - sizeof(dc_Value))->value & stackptr->value;
+	stackptr -= sizeof(dc_Value);
+}
+
+void dc_not(void) {
+	stackptr->value = ~stackptr->value;
+}
+void dc_orr(void) {
+	(stackptr - sizeof(dc_Value))->value =
+		(stackptr - sizeof(dc_Value))->value | stackptr->value;
+	stackptr -= sizeof(dc_Value);
+}
+void dc_xor(void) {
+	(stackptr - sizeof(dc_Value))->value =
+		(stackptr - sizeof(dc_Value))->value ^ stackptr->value;
+	stackptr -= sizeof(dc_Value);
+}
