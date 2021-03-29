@@ -16,9 +16,14 @@ void dc_interpret(dc_Value a) {
 
 void dc_interpret_inst(dc_Value a) {
 	switch(a.value) {
-	case ADD : dc_add(); break;
-	case PRT : dc_prt() ;
-	default: return;
+	case ADD :
+		dc_add();
+		break;
+	case PRT :
+		dc_prt();
+		break;
+	default: 
+		break;
 	}
 }
 
