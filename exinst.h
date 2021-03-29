@@ -6,9 +6,6 @@
 
 #include "def.h"
 
-#define STACKSIZE 1024
-
-
 void dc_interpret(dc_Value a);
 void dc_interpret_inst(dc_Value a);
 
@@ -38,6 +35,5 @@ void dc_xor(void);
 void dc_mar(void);
 void dc_aae(void);
 void dc_pas(void);
-
 
 #endif /* EXINST_H */

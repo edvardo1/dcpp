@@ -1,5 +1,6 @@
 #include "exinst.h"
 
+#define STACKSIZE 1024
 static dc_Value stack[STACKSIZE];
 static dc_Value *stackptr = stack - sizeof(dc_Value);
 
