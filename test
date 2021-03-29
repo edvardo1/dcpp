@@ -1,0 +1,72 @@
+# if(argc == 2) {
+#   if (arg[1] < 3) {
+#     print "arg[1] is less than 3!";
+#   } else {
+#     print "arg[1] is not less than 3!";
+#   }
+# }
+
+# 12 nice cool three 4
+
+push [ push 1
+       aae
+       push "argc"
+       ltr
+       push 1
+       push [ push "x is less than 3!\n"
+              prt
+              push 1
+              sub
+            ]
+       push "argc"
+       rtr
+       push 3
+       lst
+       i1x
+       push [ push "x is not less than 3!\n"
+              prt
+            ]
+       i1x
+     ]
+push "main"
+ltr
+
+pas
+push 0
+eto
+not
+push "main"
+rtr
+i1x
+
+# ltr "reg", 1
+# push [ prt "x is less than 3!\n"
+#        sub "reg", 1
+#      ]
+# let arg[1], 3
+# i1x
+# push [ prt "x is not less than 3!\n"
+#      ]
+# rtr "reg"
+# i1x
+#
+#
+# 
+# i1x [eto #arg 2] [ ltr "reg", 1
+#                    i1x [let arg[1] 3] [ prt "x is less than 3!\n"
+#                                         sub "reg" 1
+#                                        ]
+#                    i1x "reg" [ prt "x is not less than 3!\n"
+#                              ]
+#                  ]
+#
+#
+# 
+# if [#arg == 2] [
+#   if(arg[1] < 3) [
+#     prt "x is less than 3!\n"
+#     reg -= 1
+#   ] else [
+#     prt "x is not less than 3!"
+#   ]
+# ]
