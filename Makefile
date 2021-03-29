@@ -15,4 +15,4 @@ parse.o: def.h parse.h parse.c
 	$(CC) $(CFLAGS) -c parse.c
 
 clean:
-	rm *.o dcpp
+	rm *.o $(PROGRAMMNAME)
