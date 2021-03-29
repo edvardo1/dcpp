@@ -54,9 +54,8 @@ void dc_prt() {
 	case FLOAT :
 		printf("%f\n", (double)stackptr->value);
 		break;
-	case ARRAY :
-		break;
-	case INSTRUCTION :
+	default :
+		CRASH("Tried to print invalid value.");
 		break;
 	}
 }
