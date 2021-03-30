@@ -14,5 +14,8 @@ exinst.o: def.h exinst.h exinst.c
 parse.o: def.h parse.h parse.c
 	$(CC) $(CFLAGS) -c parse.c
 
+registers.o: def.h registers.h registers.c
+	$(CC) $(CFLAGS) -c registers.c
+
 clean:
 	rm *.o $(PROGRAMMNAME)
