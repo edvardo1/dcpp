@@ -1,4 +1,4 @@
-#include "exinst"
+#include "exinst.h"
 
 #define STACKSIZE 1024
 static dc_Value stack[STACKSIZE];
@@ -113,7 +113,7 @@ void dc_exe(void) {
 }
 
 void dc_i1x(void) {
-	if(stackptr.type == INTEGER && stackptr.value = 1) {
+	if(stackptr->type == INTEGER && stackptr->value == 1) {
 		stackptr -= sizeof(dc_Value);
 		dc_exe();
 	}
