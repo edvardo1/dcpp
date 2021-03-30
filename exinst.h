@@ -6,8 +6,6 @@
 
 #include "def.h"
 
-void dc_init_registers(void);
-
 void dc_interpret(dc_Value a);
 void dc_interpret_inst(dc_Value a);
 
