@@ -1,4 +1,4 @@
-#include "exinst.h"
+#include "exinst"
 
 #define STACKSIZE 1024
 static dc_Value stack[STACKSIZE];
@@ -22,6 +22,17 @@ void dc_interpret_inst(dc_Value a) {
 		break;
 	case PRT :
 		dc_prt();
+		break;
+	case AND :
+		dc_and();
+		break;
+	case NOT :
+		dc_not();
+	case ORR :
+		dc_orr();
+		break;
+	case XOR :
+		dc_xor();
 		break;
 	default: 
 		break;
