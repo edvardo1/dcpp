@@ -6,6 +6,8 @@
 
 #include "def.h"
 
+void dc_init_registers(void);
+
 void dc_interpret(dc_Value a);
 void dc_interpret_inst(dc_Value a);
 
@@ -17,6 +19,7 @@ void dc_mul(void);
 void dc_div(void);
 void dc_mod(void);
 void dc_prt(void);
+void dc_prc(void);
 void dc_cln(void);
 void dc_clr(void);
 void dc_lst(void);
