@@ -2,7 +2,7 @@ CC?=cc
 CFLAGS=-Wall -std=c99
 PROGRAMNAME=dcpp
 
-dcpp: main.o exinst.o parse.o
+dcpp: main.o exinst.o parse.o registers.o
 	$(CC) $(CFLAGS) -o $(PROGRAMNAME) *.o
 
 main.o: def.h main.c
