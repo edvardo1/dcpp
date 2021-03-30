@@ -23,6 +23,11 @@ void dc_interpret_inst(dc_Value a) {
 	case PRT :
 		dc_prt();
 		break;
+	case EXE:
+		dc_exe();
+	case I1X:
+		dc_i1x();
+		break;
 	case AND :
 		dc_and();
 		break;
@@ -105,6 +110,14 @@ void dc_exe(void) {
 			free(program.arr);
 		}
 	}
+}
+
+void dc_i1x(void) {
+	if(stackptr.type == INTEGER && stackptr.value = 1) {
+		stackptr -= sizeof(dc_Value);
+		dc_exe();
+	}
+	stackptr -= sizeof(dc_Value);
 }
 
 void dc_and(void) {
